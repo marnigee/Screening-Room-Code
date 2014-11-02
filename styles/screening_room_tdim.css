@@ -1,0 +1,453 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+/* Basics
+----------------------------------- */
+
+/* clearfix fix */
+.clearfix:before,
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1; /* IE < 8 */
+}
+
+
+body {
+	background:#00adef url("/i/bkgd/bg-site.jpg") no-repeat;
+	background-size:100%;
+	background-attachment:fixed;
+	font: normal 12px/18px "Lucida Sans", "Lucida Grande", Trebuchet, "Trebuchet MS", Arial, sans-serif;
+}
+
+	body.bg01 {
+		background:#00adef url("/i/bkgd/bggradient01.gif") no-repeat; 
+		background-size:100%; 
+		background-attachment:fixed;
+	}
+	
+	body.bg02 {
+		background:#575faa url("/i/bkgd/bggradient02.gif") no-repeat; 
+		background-size:100%; 
+		background-attachment:fixed;
+
+	}
+	
+	body.bg03 {	
+		background:#555ead url("/i/bkgd/bggradient03.gif") no-repeat; 
+		background-size:100%; 
+		background-attachment:fixed;
+
+	}
+	
+p {
+	color:#333;
+	font-size:12px;
+	line-height: 1.5em;
+}
+
+#page {
+	margin: 0 auto;
+	 text-align: left;
+	width: 988px;
+	height:1275px; 
+}
+
+#content {
+	padding: 0 18px 30px;
+	position: relative;
+	width: 952px; 
+	background: white;
+	color: #333;
+	height:100%;
+}
+	
+
+#header {
+	height: 114px;
+	padding-top: 26px;
+	width: 988px;
+}
+
+
+
+#logo-print { display:none; }
+
+.nav-bar {
+	margin-bottom:5px;
+}	
+
+
+/* Top Navigation
+----------------------------------- */
+	
+#nav {
+	color: #000;
+	background: url("/i/bkgd/bg-topnav.gif") repeat-x 0 48px;
+	list-style: none;
+	margin: 0;
+	height: 50px;
+	padding: 0;
+	width: 952px;
+}
+	
+	#nav li {
+		float: left;
+		height: 48px;
+		padding-right: 35px;
+	}
+
+	
+	#nav #perspectives {
+		width: 149px;
+	}
+	#nav #blogs {
+		width: 38px;
+	}
+	#nav #collection {
+		width: 102px;
+	}
+	#nav #events {
+		width: 112px;
+	}
+	#nav #media-council {
+		width: 97px;
+	}
+	#nav #join-us {
+		width: 80px;
+	}
+	#nav #screening-room-2012 {
+		width: 110px;
+	}
+		
+	#nav a {
+		background-color:transparent;
+		background-repeat: no-repeat;
+		background-position: 0 -4px;
+		border-top: 4px solid #fff;
+		color: #666;
+		display: block;
+		height:44px;
+		line-height:44px;
+		font-size: 10px;
+		overflow: hidden;
+		/*padding: 22px 0 16px;*/
+		text-decoration: none;
+		text-indent: -10000px;
+		text-transform: uppercase;
+	}
+	
+	#nav a:hover {
+		background-position: bottom left;
+		border-top-color: #000;
+		color: #000;
+	}
+	
+	#nav #perspectives a {
+		background-image: url("/i/global/nav-perspectives.gif");
+	}
+	#nav #blogs a {
+		background-image: url("/i/global/nav-blogs.gif");
+	}
+	#nav #collection a {
+		background-image: url("/i/global/nav-collection.gif");
+	}
+	#nav #events a {
+		background-image: url("/i/global/nav-programs.gif");
+	}
+	#nav #media-council a {
+		background-image: url("/i/global/nav-mediacouncil.gif");
+	}
+	#nav #join-us a {
+		background-image: url("/i/global/nav-join-us.gif");
+	}
+	#nav #screening-room-2012 a {
+		background-image: url("/i/global/nav-screeningroom.gif");
+	}
+	
+	#nav em {
+		background-color:transparent;
+		background-repeat: no-repeat;
+		background-position: bottom left;
+		border-top: 4px solid #000;
+		color: #000;
+		display: block;
+		font-size: 10px;
+		height: 44px;
+		line-height: 44px;
+		overflow: hidden;
+		text-decoration: none;
+		text-indent: -10000px;
+		text-transform: uppercase;
+	}
+	
+	#nav em a {
+		background-position: bottom left;
+		border-top: 0;
+		color: #000;
+	}
+	
+		#nav em a:hover {
+			background-position: bottom left;
+		}
+	
+	#nav #perspectives em {
+		background-image: url("/i/global/nav-perspectives.gif");
+	}
+	#nav #blogs em {
+		background-image: url("/i/global/nav-blogs.gif");
+	}
+	#nav #collection em {
+		background-image: url("/i/global/nav-collection.gif");
+	}
+	#nav #events em {
+		background-image: url("/i/global/nav-programs.gif");
+	}
+	#nav #media-council em {
+		background-image: url("/i/global/nav-mediacouncil.gif");
+	}
+	#nav #join-us em {
+		background-image: url("/i/global/nav-join-us.gif");
+	}
+	#nav #screening-room-2012 em {
+		background-image: url("/i/global/nav-screeningroom.gif");
+	}
+
+	
+/* Screening Room
+----------------------------------- */
+
+#screen {
+	background-image: url(http://assets.paleycenter.org/assets/collection/screening-room/paley-this-day-in-media-bkgd1.png);
+	
+	/*background-color:#009fDA;*/
+	background-repeat:no-repeat;
+	background-position:top;
+	/*background-position:center; */
+	/*height: 504px; */
+	height: 534px;
+	width: 951px;
+}
+
+.BrightcoveExperience {
+	position:absolute;
+	top:135px;
+	left:213px;
+}
+
+#video_info {
+	position:absolute;
+	left:587px;
+	top:138px;
+	/*background-image: url(http://paleycenter.org/img/player-border3.png);*/
+	background-repeat:no-repeat;
+	background-color:#ffffff;
+	/*height: 60px;  */
+	border:1px solid black;
+	height: 320px;
+	width: 200px;
+	
+}
+
+/* jquery menu */
+.ui-menu { 
+	width: 165px; 
+	font: bold 11px/15px "Lucida Sans", "Lucida Grande", Trebuchet, "Trebuchet MS", Arial, sans-serif;
+	z-index:100;
+}
+
+    
+.left_nav_sr {
+	width:230px;
+	/*height:700px;*/
+	color:#009cd6;
+}
+
+.left_nav {
+	position:absolute;
+	top:530px;
+}
+
+.video_cols {
+	position:absolute;
+	left:207px;
+	top:530px; 
+	/*top:560px;*/
+	width:785px;
+	/*height:700px;*/	
+	color:#009cd6;
+	
+	
+}
+
+	.video_cols ul{
+		position:relative;
+		list-style: none;
+		margin: 0;
+		/*height: 50px; */
+		height: 50px;
+		padding: 0;
+		float:left;
+	}
+
+	.video_cols li {
+		
+		float: left; 
+	}
+	
+.video_col {
+	position:absolute;
+	width:245px;
+}
+
+  .video_col li{
+	  height:130px;
+  }
+	
+
+  
+#col_heads li {
+	min-width:245px;
+	overflow:visible;
+	
+
+}
+
+#col_heads {
+	width:785px;
+	
+	
+}
+
+
+	
+.thumbnail {
+	float:left;
+	padding-right:10px;
+	height:89px;
+}
+
+.title_wrapper {
+	float:right;
+	width:100px;
+}
+
+#sr-menu {
+	font: bold 11px/15px "Lucida Sans", "Lucida Grande", Trebuchet, "Trebuchet MS", Arial, sans-serif;
+	text-align: left;	
+	padding: 0px 0px 12px 0px;
+	color:#057baf;
+	font-size:11px;
+	line-height:15px;
+}
+
+	#sr-menu a {
+		text-decoration:none;
+		color:#009cd6;
+	}
+
+.sr-subhead {
+	font: bold 16px/18px "Lucida Sans", "Lucida Grande", Trebuchet, "Trebuchet MS", Arial, sans-serif;
+	text-align: left;	
+	color:#000;
+	font-size:16px;
+	line-height:19px;
+}
+
+.sr-desc {
+	font: normal 9px/15px "Lucida Sans", "Lucida Grande", Trebuchet, "Trebuchet MS", Arial, sans-serif;
+	text-align: left;	
+	padding: 2px 0px 0px 0px;
+	color:#777;
+	font-size:9px;
+	line-height:15px;
+	text-transform:uppercase;
+}
+
+#sr-title {
+	font: bold 11px/15px "Lucida Sans", "Lucida Grande", Trebuchet, "Trebuchet MS", Arial, sans-serif;
+	text-align: left;	
+	padding: 0px 0px 4px 0px;
+	color:#057baf;
+	font-size:11px;
+	line-height:15px;
+}
+
+#sr-date {
+	font: normal 9px/10px "Lucida Sans", "Lucida Grande", Trebuchet, "Trebuchet MS", Arial, sans-serif;
+	text-align: left;	
+	color:#777;
+	font-size:9px;
+	line-height:10px;
+	text-transform:uppercase
+}
+
+#more_link_1 a {
+	position:absolute;
+	top:675px;
+	left:0px;
+	font: bold 10px/11px "Lucida Sans", "Lucida Grande", Trebuchet, "Trebuchet MS", Arial, sans-serif;
+	text-align: left;	
+	color:#057baf;
+	font-size:10px;
+	line-height:11px;	
+}
+
+#more_link_2 a {
+	position:absolute;
+	top:675px;
+	left:245px;
+	font: bold 10px/11px "Lucida Sans", "Lucida Grande", Trebuchet, "Trebuchet MS", Arial, sans-serif;
+	text-align: left;	
+	color:#057baf;
+	font-size:10px;
+	line-height:11px;	
+}
+
+#more_link_3 a {
+	position:absolute;
+	top:675px;
+	left:490px;
+	font: bold 10px/11px "Lucida Sans", "Lucida Grande", Trebuchet, "Trebuchet MS", Arial, sans-serif;
+	text-align: left;	
+	color:#057baf;
+	font-size:10px;
+	line-height:11px;	
+}
+
+
+.footer p {
+	color:#fff;
+	font-family:'Lucida Sans','Lucida Grande',Trebuchet,'Trebuchet MS',Arial,sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	font-style:normal;
+	letter-spacing:normal;
+	line-height:20px;
+	height:100px;
+}
+
+#autocomplete {
+	width:120px;
+}
+
+#error_message {
+	position:absolute;
+	left:207px;
+	top:570px;
+	width:775px;
+	z-index:10000;
+	background-color:#FFF;
+}
+

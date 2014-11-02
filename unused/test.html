@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<script src="exampleClass.js"></script>
+<script>
+var instance1 = new exampleClass();
+var instance2 = new exampleClass();
+alert(instance1.method1("hello"));
+
+instance1.property1 = 10;
+alert (instance1.property1);
+alert (instance2.property1);
+
+//Player class
+function Player() {
+	this.name;
+	this.hitpoints = 100;
+	this.attack = function attack (opponent) {
+		opponent.hitpoints -= 10;
+		alert(this.name + " just hit " + opponent.name);
+	}
+}
+
+//create players
+var p1 = new Player();
+var p2 = new Player();
+p1.name = "Conan";
+p2.name = "Hercules";
+p1.attack(p2);
+alert(p2.name + " has " + p2.hitpoints + " hit points left");
+
+Player.prototype.heal = function heal(targetPlayer){
+	targetPlayer.hitpoints+= 5;
+};
+
+
+p1.heal(p2);
+alert(p2.name + " has " + p2.hitpoints + " hit points left");
+alert(p1.name + " has " + p2.hitpoints + " hit points left");
+
+Player.prototype.energy = 200;
+alert(p1.energy);
+
+//establish a parent class
+function parentClass() {
+	this.parent_property1 = "Hola";
+	this.parentmethod1 = function parentmethod1(arg1) {
+		return arg1 + " Parent method 1 return data ...";		
+	}
+}
+
+//establish a child class
+function childClass() {
+	this.child_property1 = "Adios";
+	this.childmethod1 = function parentmethod1(arg1) {
+		return arg1 + " Child method 1 return data ...";		
+	}
+}
+
+//make child class inherit from parent using prototype
+childClass.prototype = new parentClass();
+
+var instance1 = new childClass();
+alert(instance1 instanceof parentClass);
+alert(instance1 instanceof childClass);
+
+//access instance methods and properties
+alert (instance1.parentmethod1("RESULT: "));
+alert (instance1.childmethod1("RESULT: "));
+alert (instance1.parent_property1);
+alert (instance1.parent_property2);
+
+//override parentmethod1 in childClass
+childClass.prototype.parentmethod1 = function parentmethod1(arg1) {
+	return arg1 + "I have overridden Parent method 1";
+}
+alert (instance1.parentmethod1("RESULT: "));
+
+
+
+
+Object.prototype.can = function(methodName)
+{
+     return ((typeof this[methodName]) == "function");
+};
+
+if (someObject.can("quack"))
+{
+    someObject.quack();
+}
+
+</script>
+</head>
+
+<body>
+</body>
+</html>

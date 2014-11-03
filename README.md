@@ -9,7 +9,7 @@ The script is screening-room-3-2.js.
 
 The following URLs are working examples of this code:
 http://paley.me/brightcove-sr
-http://paley.me/brightcove-sr
+http://paley.me/youtube-sr
 
 They use identical code bases except for this one line that defines the type of VideoController object: 
 

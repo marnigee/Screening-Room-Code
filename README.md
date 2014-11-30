@@ -16,8 +16,9 @@ They use identical code bases except for this one line that defines the type of 
 The scripts are screening-room-youtube.js and screening-room-brightcove.js.
 
 The following URLs are working examples of this code:
-http://media.paleycenter.org/wp-content/misc/videos/screening-room-youtube.html
-http://media.paleycenter.org/wp-content/misc/videos/screening-room-brightcove.html
+
+	http://media.paleycenter.org/wp-content/misc/videos/screening-room-youtube.html
+	http://media.paleycenter.org/wp-content/misc/videos/screening-room-brightcove.html
 
 
 

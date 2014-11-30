@@ -1,15 +1,7 @@
-Screening-Room-Code
+Screening Room Project
 ===================
 
-Object-Oriented Javascript Screening Room supporting Brightcove, YouTube and other video hosts with REST APIs.
-
-The scope of theis project was to write a screening room that embeds thrid-party videos onto a web page, incorporating search and pagination functionality. With scaleability and resusable code in mind, I used an MVC (Model View Controller) design pattern. The program creates Video, VideoGroup, and PageOfVideo objects from json AJAX calls (the Model); the VideoController object holds the business logic (the Controller), and the HTML and CSS files cover the presentation layer (the View). I also incorporated an OOP approach so that the base functionality is in the parent VideoController object, which the more specific objects like BrightcoveVideoController and YouTubeVideoController inherit. 
-
-The script is screening-room-3-2.js.
-
-The following URLs are working examples of this code:
-http://paley.me/brightcove-sr
-http://paley.me/youtube-sr
+The scope of this project was to write a mobile-friendly Javascript screening room that embeds thrid-party videos incorporating search and pagination functionality. With scaleability and resusable code in mind, I used an MVC (Model View Controller) design pattern: Video, VideoGroup, and PageOfVideo objects serve as the Model and are built from json AJAX calls; the VideoController object serves as the Controller with all the business logic; and the HTML and CSS files serve as the View covering the presentation layer. I also incorporated an OOP approach using Javascript prototypes so that the base functionality is in the parent VideoController object. The more specific BrightcoveVideoController and YouTubeVideoController objects inherit that common base functionality.
 
 They use identical code bases except for this one line that defines the type of VideoController object: 
 
@@ -17,7 +9,15 @@ They use identical code bases except for this one line that defines the type of 
 	* declare and initialize the VideoController 
 	**/	
 	var videoController = new BrightcoveVideoController();
+	OR
+	var videoController = new YouTubeVideoController();
 
+
+The scripts are screening-room-youtube.js and screening-room-brightcove.js.
+
+The following URLs are working examples of this code:
+http://media.paleycenter.org/wp-content/misc/videos/screening-room-youtube.html
+http://media.paleycenter.org/wp-content/misc/videos/screening-room-brightcove.html
 
 
 
